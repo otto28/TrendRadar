@@ -177,7 +177,7 @@ presets:
     periods:
       evening_summary:
         name: "晚间汇总"
-        start: "21:30"
+        start: "20:00"
         end: "22:00"
         analyze: true              # 晚间做 AI 分析
         ai_mode: "daily"           # AI 也汇总全天内容
@@ -187,19 +187,6 @@ presets:
           push: true               # 窗口内只推送一次
 
     # 日计划 ── 把时间段组装成一天的安排
-        push: true
-      afternoon:
-        name: "下午"
-        start: "18:30"
-        end: "19:00"
-        collect: true
-        analyze: true
-        push: true
-        report_mode: daily
-        ai_mode: daily
-        once:
-          analyze: true
-          push: true
     day_plans:
       all_day:
         periods: ["evening_summary"]
